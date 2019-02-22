@@ -123,4 +123,15 @@
 
   </repositories>
 
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.openhab.core.bom</groupId>
+            <artifactId>org.openhab.core.bom.compile-model</artifactId>
+            <type>pom</type>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
 </project>

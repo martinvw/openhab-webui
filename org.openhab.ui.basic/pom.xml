@@ -10,11 +10,20 @@
   </parent>
   
   <artifactId>org.openhab.ui.basic</artifactId>
-  <packaging>eclipse-plugin</packaging>
 
   <name>Basic UI</name>
 
   <dependencies>
+    <dependency>
+      <groupId>org.openhab.core.bundles</groupId>
+      <artifactId>org.openhab.core.ui</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openhab.core.bundles</groupId>
+      <artifactId>org.openhab.core.io.rest.sitemap</artifactId>
+      <version>${project.version}</version>
+    </dependency>
     <dependency>
       <groupId>org.openhab.ui</groupId>
       <artifactId>org.openhab.ui.dashboard</artifactId>
