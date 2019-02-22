@@ -12,7 +12,7 @@
   <artifactId>org.openhab.ui.iconset.classic</artifactId>
 
   <name>Classic Icon Set</name>
-  
+
   <dependencies>
     <dependency>
       <groupId>org.openhab.core.bundles</groupId>

@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
@@ -9,10 +10,17 @@
   </parent>
 
   <artifactId>org.openhab.ui.homebuilder</artifactId>
-  <packaging>eclipse-plugin</packaging>
 
   <name>openHAB HomeBuilder UI</name>
-  
+
+  <dependencies>
+    <dependency>
+      <groupId>org.openhab.core.bundles</groupId>
+      <artifactId>org.openhab.core.ui.dashboard</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+
   <build>
     <plugins>
       <plugin>
@@ -90,6 +98,35 @@
             </configuration>
           </execution>
 
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>add-resource</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <resources>
+                <resource>
+                  <directory>web</directory>
+                  <targetPath>web</targetPath>
+                  <excludes>
+                    <exclude>web/node_modules/**</exclude>
+                    <exclude>web/src/**</exclude>
+                    <exclude>web/dist/build.js.map</exclude>
+                    <exclude>web/webpack.config.js</exclude>
+                    <exclude>web/.babelrc</exclude>
+                    <exclude>web/.eslintrc.json</exclude>
+                    <exclude>web/package.json</exclude>
+                  </excludes>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
         </executions>
       </plugin>
     </plugins>
