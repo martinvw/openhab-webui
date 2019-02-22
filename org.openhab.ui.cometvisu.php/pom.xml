@@ -15,8 +15,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.caucho</groupId>
-      <artifactId>quercus</artifactId>
+      <groupId>org.openhab</groupId>
+      <artifactId>com.caucho.quercus</artifactId>
       <version>4.0.45</version>
     </dependency>
     <dependency>
