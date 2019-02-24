@@ -125,13 +125,6 @@
       <url>https://openhab.jfrog.io/openhab/libs-snapshot</url>
     </repository>
 
-    <!-- openHAB dependencies p2 repository -->
-    <repository>
-      <id>p2-openhab-deps-repo</id>
-      <url>https://dl.bintray.com/openhab/p2/openhab-deps-repo/${ohdr.version}</url>
-      <layout>p2</layout>
-    </repository>
-
   </repositories>
 
 </project>
