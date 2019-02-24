@@ -70,7 +70,17 @@
 
   <properties>
     <ohc.version>2.5.0-SNAPSHOT</ohc.version>
+    <ohdr.version>1.0.40</ohdr.version>
   </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.openhab.core.bom</groupId>
+      <artifactId>org.openhab.core.bom.compile-model</artifactId>
+      <version>${project.version}</version>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
 
   <repositories>
 
@@ -123,14 +133,5 @@
     </repository>
 
   </repositories>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.openhab.core.bom</groupId>
-            <artifactId>org.openhab.core.bom.compile-model</artifactId>
-            <version>${project.version}</version>
-            <type>pom</type>
-        </dependency>
-    </dependencies>
 
 </project>
