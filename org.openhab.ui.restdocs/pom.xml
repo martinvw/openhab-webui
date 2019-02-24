@@ -13,8 +13,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.openhab.core.bundles</groupId>
-      <artifactId>org.openhab.core.ui.dashboard</artifactId>
+      <groupId>org.openhab.ui</groupId>
+      <artifactId>org.openhab.ui.dashboard</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>
