@@ -85,13 +85,17 @@
         <feature>openhab-runtime-base</feature>
         <feature>openhab-ui-dashboard</feature>
         <bundle>mvn:org.openhab.ui/org.openhab.ui.habmin/${project.version}</bundle>
+        <bundle dependency="true">mvn:commons-codec/commons-codec/1.10</bundle>
     </feature>
 
     <feature name="openhab-ui-habot" description="HABot" version="${project.version}">
         <feature>openhab-runtime-base</feature>
         <feature>openhab-ui-dashboard</feature>
+        <feature>openhab-core-automation</feature>
         <bundle>mvn:org.openhab.ui/org.openhab.ui.habot/${project.version}</bundle>
-        <bundle dependency="true">mvn:org.bouncycastle/bcprov-jdk15on/1.51</bundle>
+        <bundle>mvn:org.openhab.core.bundles/org.openhab.core.semantics/${project.version}</bundle>
+        <bundle>mvn:org.openhab.core.bundles/org.openhab.core.io.rest/${project.version}</bundle>
+        <bundle dependency="true">mvn:org.bouncycastle/bcprov-jdk15on/1.54</bundle>
         <bundle dependency="true">mvn:org.apache.opennlp/opennlp-tools/1.8.3</bundle>
         <bundle dependency="true">mvn:org.bitbucket.b_c/jose4j/0.6.3</bundle>
     </feature>
