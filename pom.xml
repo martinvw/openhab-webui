@@ -69,7 +69,6 @@
   </distributionManagement>
 
   <properties>
-    <ohc.version>2.5.0-SNAPSHOT</ohc.version>
     <ohdr.version>1.0.40</ohdr.version>
   </properties>
 

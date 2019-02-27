@@ -3,5 +3,4 @@ node
 npm_cache
 src/main/resources/web/smarthome.css
 src/main/resources/web/smarthome.js
-src/main/resources/web/fonts/Roboto-Medium.svg
-src/main/resources/web/fonts/Roboto-Regular.svg
+src/main/resources/web/fonts/*
