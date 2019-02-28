@@ -1,1 +1,2 @@
+Bundle-SymbolicName: ${project.artifactId}
 Bundle-Activator: org.openhab.ui.cometvisu.internal.CvActivator
